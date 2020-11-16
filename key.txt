@@ -1,0 +1,4 @@
+https://www.openode.io/docs/platform/cli
+
+openode deploy [-t TOKEN -s SITE_NAME]
+
