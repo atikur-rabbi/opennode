@@ -5,3 +5,44 @@ openode deploy [-t TOKEN -s SITE_NAME]
 git add . && git commit -m "Update" && git push -u origin main
 
 d266a78cd9b7df6eb37026a21c73cc17
+
+
+login                                     Force login to your account.
+  deploy [options]                          Deploy your website on opeNode
+  restart [locationId]                      Restart the instance without synchronizing the files.
+  reload [options]                          Reload your container instance
+  sync [locationId]                         Send the changed/new files to opeNode without deployment
+  ci-conf <token> <sitename>                Write the confs for your continuous integration (CI) env
+  change-instance|switch [sitename]         Change the currently active instance.
+  status                                    Get info on your opeNode instance
+  logs [options]                            Print logs in realtime
+  exec <myCmd>                              Execute a command in your container instance
+  stop                                      Stop your opeNode instance
+  list-aliases                              List aliases of the custom domain
+  add-alias <domainName>                    Add hostname alias
+  del-alias <domainName>                    Delete hostname alias
+  erase-all [locationId]                    Erase all content in the remote repository
+  storage-areas                             List the storage areas
+  add-storage-area <storageArea>            Add a new storage area
+  del-storage-area <storageArea>            Delete a storage area
+  create-snapshot <path>                    Create a snapshot of a given path.
+  plans                                     List the available plans
+  plan                                      Show the currently active plan
+  set-plan <plan>                           Set the currently active plan
+  available-locations                       List the available locations
+  locations                                 Currently active locations
+  add-location <locationId>                 Add a new location
+  del-location <locationId>                 Remove a location
+  list-templates                            Currently available templates
+  template-info <template-name>             Shows the template readme.
+  template [options] [template-name]        Retrieve the template Dockerfile.
+  increase-storage <amountGB> [locationId]  Increase the extra storage capacity
+  destroy-storage [locationId]              Destroy the persisted disk.
+  set-config <variable> <value>             Set a website configuration
+  env                                       Retrieve the stored environment variables
+  set-env <variable> <value>                Set an environment variable
+  del-env <variable>                        Set an environment variable
+  config <variable>                         Get a configuration value
+  available-configs                         List the available configs (used by set-config)
+  *
+  help [command]                            display help for command
