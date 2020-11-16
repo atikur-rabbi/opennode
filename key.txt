@@ -2,3 +2,5 @@ https://www.openode.io/docs/platform/cli
 
 openode deploy [-t TOKEN -s SITE_NAME]
 
+git add . && git commit -m "Update" && git push -u origin main
+
